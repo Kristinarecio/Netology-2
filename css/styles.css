@@ -1,0 +1,101 @@
+@font-face {
+        font-family: "MyWebFontRegular", sans-serif;
+        src: url("fonts/OpenSans-Regular.ttf") format("truetype"),
+              url("fonts/OpenSans-Regular.woff") format("woff"),
+              url("fonts/OpenSans-Regular.woff2") format("woff2");
+      }
+
+@font-face {
+        font-family: "MyWebFontBold", sans-serif;
+        src: url("fonts/OpenSans-Bold.ttf") format("truetype"),
+              url("fonts/OpenSans-Bold.woff") format("woff"),
+              url("fonts/OpenSans-Bold.woff2") format("woff2");
+      }
+* {
+        margin: 0;
+        padding: 0;
+}
+
+html {
+        font-size: 62.5%;
+        font-family: "MyWebFontRegular";
+      }
+
+      .body {
+              background-color: #ffffff;
+      }
+
+.main-header {
+        height: 100vh;
+        text-align: center;
+        background-image: url("../images/top-background_320.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        position: relative;
+      }
+
+.main-header::after {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #5e42b0;
+        opacity: 0.2; 
+        position: absolute;   
+}
+
+.main-header-content {
+        padding-top: 3.8rem;
+        padding-bottom: 8.2rem;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.main-header-logo {
+        margin-bottom: 14.6rem;
+}
+
+.main-header-label {
+        margin-bottom: 8.2rem;
+}
+
+.main-heading {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "MyWebFontBold";
+        font-size: 2.8rem;
+        line-height: 3.1rem;
+        width: 100%;
+}
+
+.headline {
+        text-align: left;
+        margin-bottom: 2.5rem;
+} 
+
+.btn-appstore:link, .btn-googleplay:link,
+.btn-appstore:visited, .btn-googleplay:visited {
+        display: block; 
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 1rem 8.2rem;
+        z-index: 3;
+        position: relative;
+}
+
+.btn-appstore::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 1.5rem;
+        z-index: 1;
+        background-color: #5e42b0;
+        height: 100%;
+        width: 90%;
+        border-radius: 100px;
+}
