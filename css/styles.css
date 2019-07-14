@@ -21,18 +21,20 @@ html {
         font-family: "MyWebFontRegular";
       }
 
-      .body {
-              background-color: #ffffff;
+.body {
+        background-color: #ffffff;
       }
 
 .main-header {
         height: 100vh;
+        width: 100vw;
         text-align: center;
-        background-image: url("../images/top-background_320.png");
+        background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/football_767.jpg");
         background-size: cover;
         background-repeat: no-repeat;
 
         position: relative;
+        z-index: 1;
       }
 
 .main-header::after {
@@ -41,27 +43,39 @@ html {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #5e42b0;
-        opacity: 0.2; 
-        position: absolute;   
-}
+        background-color: #371a5d;
+        opacity: 0.8; 
+        position: absolute; 
+        z-index: 2;  
+} 
 
 .main-header-content {
         padding-top: 3.8rem;
         padding-bottom: 8.2rem;
         margin-left: auto;
         margin-right: auto;
+        z-index: 3;
 }
 
 .main-header-logo {
         margin-bottom: 14.6rem;
 }
 
+.surface-logo-320 {
+        width: 146px;
+        height: 42px;
+        fill: #ffffff;
+}
+
 .main-header-label {
         margin-bottom: 8.2rem;
+        margin-top: 12.1rem;
 }
 
 .main-heading {
+        box-sizing: border-box;
+        text-align: left;
+        margin-left: 2rem;
         text-transform: uppercase;
         color: #ffffff;
         font-family: "MyWebFontBold";
@@ -70,32 +84,42 @@ html {
         width: 100%;
 }
 
-.headline {
+.second-heading {
+        display: block;
         text-align: left;
-        margin-bottom: 2.5rem;
+        margin-left: 4.5rem;
+        margin-top: 2.5rem;
 } 
+.btn-container {
+    width: 28rem;   
+    margin: auto;  
+}
 
 .btn-appstore:link, .btn-googleplay:link,
 .btn-appstore:visited, .btn-googleplay:visited {
-        display: block; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
         font-size: 0.8rem;
+        font-weight: 400;
+        height: 3.5rem;
         text-transform: uppercase;
         color: #ffffff;
+        background-color: #5e42b0;
         text-decoration: none;
-        padding: 1rem 8.2rem;
-        z-index: 3;
-        position: relative;
+        border-radius: 100px;
+        margin-bottom: 1.4rem;
+           
 }
 
-.btn-appstore::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 1.5rem;
-        z-index: 1;
-        background-color: #5e42b0;
-        height: 100%;
-        width: 90%;
-        border-radius: 100px;
+.btn-app {
+        display: block;
+        font-weight: 700;
+}
+
+.apple-icon, .google-icon {
+        width: 23px;
+        height: 23px;
+        color: #ffffff;
+        margin-right: 1.2rem;
 }
