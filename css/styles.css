@@ -55,6 +55,7 @@ html {
         margin-left: auto;
         margin-right: auto;
         z-index: 3;
+        position: relative;
 }
 
 .main-header-logo {
@@ -112,7 +113,16 @@ html {
            
 }
 
+.btn-label {
+        text-align: left;
+}
+
 .btn-app {
+        display: block;
+        font-weight: 700;
+}
+
+.btn-google {
         display: block;
         font-weight: 700;
 }
@@ -122,4 +132,65 @@ html {
         height: 23px;
         fill: #ffffff;
         margin-right: 1.2rem;
+}
+
+.athletes-header {
+        height: 80vh;
+        width: 100vw;
+        text-align: center;
+        background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/footballer_192.png");
+        background-size: auto auto;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.athletes-article {
+        background-color: #fafafa;
+        padding-top: 8rem;
+        padding-bottom: 5.3rem;
+       
+}
+
+.athletes-heading {
+        font-family: "MyWebFontBold", sans-serif;
+        text-transform: uppercase;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #e7e7e7;
+        text-align: left;
+        margin-top: 2.5rem;
+        margin-left: 2rem;     
+}
+
+.athletes-article-heading {
+        font-family: "MyWebFontBold", sans-serif;
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        font-weight: 700;
+        letter-spacing: 0.01rem;
+        color: #c1c1c1;
+        margin-left: 4.3rem;
+        margin-bottom: 2.5rem;
+        position: relative;       
+}
+
+.athletes-article-heading::before {
+        content: "01";
+        font-size: 1.4rem;
+        color: 	#000000;
+        border-bottom: 0.4rem #5e42b0 solid;
+        position: absolute;
+        top: 0.1rem;
+        left: -2.5rem;
+}
+
+.athletes-article-text {
+        font-family: "MyWebFontRegular";
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 28rem;
+        letter-spacing: 0.01rem;
+        color: #000000; 
+        text-align: left;
+        margin-left: 2rem; 
 }
