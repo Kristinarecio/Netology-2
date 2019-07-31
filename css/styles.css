@@ -11,6 +11,7 @@
               url("fonts/OpenSans-Bold.woff") format("woff"),
               url("fonts/OpenSans-Bold.woff2") format("woff2");
       }
+      
 * {
         margin: 0;
         padding: 0;
@@ -26,13 +27,11 @@ html {
       }
 
 .main-header {
-        height: 100vh;
         width: 100vw;
         text-align: center;
         background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/football_767.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-
         position: relative;
         z-index: 1;
       }
@@ -135,13 +134,8 @@ html {
 }
 
 .athletes-header {
-        height: 80vh;
         width: 100vw;
         text-align: center;
-        background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/footballer_192.png");
-        background-size: auto auto;
-        background-position: center;
-        background-repeat: no-repeat;
 }
 
 .athletes-heading {
@@ -273,13 +267,8 @@ html {
 }
 
 .players-header {
-        height: 80vh;
         width: 100vw;
         text-align: center;
-        background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/basketballer_302.png");
-        background-size: auto auto;
-        background-position: center;
-        background-repeat: no-repeat;
 }
 
 .players-heading {
