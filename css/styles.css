@@ -1,12 +1,12 @@
 @font-face {
-        font-family: "MyWebFontRegular", sans-serif;
+        font-family: "MyWebFontRegular";
         src: url("fonts/OpenSans-Regular.ttf") format("truetype"),
               url("fonts/OpenSans-Regular.woff") format("woff"),
               url("fonts/OpenSans-Regular.woff2") format("woff2");
       }
 
 @font-face {
-        font-family: "MyWebFontBold", sans-serif;
+        font-family: "MyWebFontBold";
         src: url("fonts/OpenSans-Bold.ttf") format("truetype"),
               url("fonts/OpenSans-Bold.woff") format("woff"),
               url("fonts/OpenSans-Bold.woff2") format("woff2");
@@ -18,7 +18,7 @@
 
 html {
         font-size: 62.5%;
-        font-family: "MyWebFontRegular";
+        font-family: "MyWebFontRegular", Arial, sans-serif;
       }
 
 .body {
@@ -88,7 +88,7 @@ html {
 .second-heading {
         display: block;
         text-align: left;
-        margin-left: 4.5rem;
+        margin-left: 3.5rem;
         margin-top: 2.5rem;
 } 
 .btn-container {
@@ -144,15 +144,8 @@ html {
         background-repeat: no-repeat;
 }
 
-.athletes-article {
-        background-color: #fafafa;
-        padding-top: 8rem;
-        padding-bottom: 5.3rem;
-       
-}
-
 .athletes-heading {
-        font-family: "MyWebFontBold", sans-serif;
+        font-family: "MyWebFontBold";
         text-transform: uppercase;
         font-size: 5rem;
         font-weight: 700;
@@ -162,8 +155,14 @@ html {
         margin-left: 2rem;     
 }
 
-.athletes-article-heading {
-        font-family: "MyWebFontBold", sans-serif;
+.connection-article {
+        background-color: #fafafa;
+        padding-top: 8rem;
+        padding-bottom: 5.3rem;      
+}
+
+.connection-article-heading {
+        font-family: "MyWebFontBold";
         text-transform: uppercase;
         font-size: 2.3rem;
         font-weight: 700;
@@ -174,17 +173,17 @@ html {
         position: relative;       
 }
 
-.athletes-article-heading::before {
+.connection-article-heading::before {
         content: "01";
         font-size: 1.4rem;
         color: 	#000000;
         border-bottom: 0.4rem #5e42b0 solid;
         position: absolute;
-        top: 0.1rem;
+        top: 0.3rem;
         left: -2.5rem;
 }
 
-.athletes-article-text {
+.connection-article-text {
         font-family: "MyWebFontRegular";
         font-size: 1.5rem;
         font-weight: 400;
@@ -193,4 +192,117 @@ html {
         color: #000000; 
         text-align: left;
         margin-left: 2rem; 
+}
+
+.collaboration-article {
+        background-color: #f5f4f9;
+        padding-top: 8rem;
+        padding-bottom: 5.3rem;
+}
+
+.collaboration-article-heading {
+        font-family: "MyWebFontBold";
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        font-weight: 700;
+        letter-spacing: 0.01rem;
+        color: #c1c1c1;
+        margin-left: 4.3rem;
+        margin-bottom: 2.5rem;
+        position: relative;    
+}
+
+.collaboration-article-heading::before {
+        content: "02";
+        font-size: 1.4rem;
+        color: 	#000000;
+        border-bottom: 0.4rem #5e42b0 solid;
+        position: absolute;
+        top: 0.3rem;
+        left: -2.5rem;
+}
+
+.collaboration-article-text {
+        font-family: "MyWebFontRegular";
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 28rem;
+        letter-spacing: 0.01rem;
+        color: #000000; 
+        text-align: left;
+        margin-left: 2rem;
+}
+
+.growth-article {
+        background-color: #5e42b0;
+        padding-top: 8rem;
+        padding-bottom: 5.3rem;
+}
+
+.growth-article-heading {
+        font-family: "MyWebFontBold";
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        font-weight: 700;
+        letter-spacing: 0.01rem;
+        color: #c1c1c1;
+        margin-left: 4.3rem;
+        margin-bottom: 2.5rem;
+        position: relative;
+}
+
+.growth-article-heading::before {
+        content: "03";
+        font-size: 1.4rem;
+        color: 	#000000;
+        border-bottom: 0.4rem #ffffff solid;
+        position: absolute;
+        top: 0.3rem;
+        left: -2.5rem;
+}
+
+.growth-article-text {
+        font-family: "MyWebFontRegular";
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 28rem;
+        letter-spacing: 0.01rem;
+        color: #ffffff; 
+        text-align: left;
+        margin-left: 2rem;    
+}
+
+.players-header {
+        height: 80vh;
+        width: 100vw;
+        text-align: center;
+        background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/basketballer_302.png");
+        background-size: auto auto;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.players-heading {
+        font-family: "MyWebFontBold";
+        text-transform: uppercase;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #e7e7e7;
+        text-align: left;
+        margin-top: 2.5rem;
+        margin-left: 2rem;     
+}
+
+.players article:last-child {
+        background-color: #090c35;
+}
+
+.players .growth-article-heading::before {
+        content: "03";
+        font-size: 1.4rem;
+        color: 	#8765dd;
+        border-bottom: 0.4rem #ffffff solid;
+        position: absolute;
+        top: 0.3rem;
+        left: -2.5rem;
 }
